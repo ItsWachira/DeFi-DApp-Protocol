@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "test_DApp_backend": {
+      "main": "src/test_DApp_backend/main.mo",
+      "type": "motoko"
+    },
+    "test_DApp_frontend": {
+      "dependencies": [
+        "test_DApp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/test_DApp_frontend/src/index.html"
+      },
+      "source": [
+        "src/test_DApp_frontend/assets",
+        "dist/test_DApp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
